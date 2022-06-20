@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon</title>
+</head>
+<body>
+    <h1 align="center">Pokemon master</h1>
+    <div id="container_pokemon">
+            <div class="pokemon_img">
+                <img class = "pokemon pikachu" height="120" width="120" src = https://i0.wp.com/multarte.com.br/wp-content/uploads/2019/03/pikachu.png?w=290&ssl=1>
+                {%for i in pikachu_ab%}
+                    <pre class="info">{{i}}</pre>
+                {%endfor%}
+            </div>
+            <div class="pokemon_img">
+                <img class = "pokemon squirtle" height="120" width="120" src = https://www.nicepng.com/png/full/147-1474782_007squirtle-ag-anime-2-pokemon-squirtle-png.png>
+                {%for i in squirtle_ab%}
+                    <pre class="info">{{i}}</pre>
+                {%endfor%}
+            </div>
+            <div class="pokemon_img">
+                <img class = "pokemon charmander" height="120" width="120" src = https://www.nicepng.com/png/full/278-2789894_pokemon-charmander-vector.png>
+                {%for i in charmander_ab%}
+                    <pre class="info">{{i}}</pre>
+                {%endfor%}
+            </div>
+            <div class="pokemon_img">
+                <img class = "pokemon bulbasaur" height="120" width="120" src = https://www.nicepng.com/png/full/99-991854_bulbasaur-transparent-image-bulbasaur-transparent.png>
+                {%for i in bulbasaur_ab%}
+                    <pre class="info">{{i}}</pre>
+                {%endfor%}
+            </div>
+
+    </div>
+    <div class="container_img">
+        <div class="pokemon_img">
+            <img class = "pokemon random"height="120" width="120" src ={{random_img}}>
+                {%for i in pokemon_randomly%}
+                    <pre class="info">{{i}}</pre>
+                {%endfor%}
+        </div>
+    </div>
+</body>
+</html>
+<script>
+</script>
+<style>
+    h1{
+    color: white
+    }
+    body{
+        background-color: #454545
+    }
+    .container_img{
+        display: flex;
+        justify-content: center
+    }
+    .pokemon_img{
+        background-color: ;
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 20px;
+        text-align: center;
+        visibility: hidden;
+    }
+    #container_pokemon{
+        display: flex;
+	    justify-content: space-around;
+	    margin-top: 20px;
+    }
+    .pokemon{
+        border-radius: ;
+        background-color: ;
+    }
+    .pikachu:hover{
+        border-radius: 10px;
+        background-color: yellow;
+    }
+    .squirtle:hover{
+        border-radius: 10px;
+        background-color: lightblue;
+    }
+    .charmander:hover{
+        border-radius: 10px;
+        background-color: orange;
+    }
+    .bulbasaur:hover{
+        border-radius: 10px;
+        background-color: green;
+    }
+    .random:hover{
+        border-radius: 10px;
+        background-color: black;
+    }
+    a {
+    text-decoration: none
+    }
+    .pokemon_img:hover .info{
+        visibility: visible;
+    }
+</style>
